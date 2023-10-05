@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+% ngerman steht hier für die Neue Deutsche Rechtschreibung
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{mathbbol}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{biblio.bib}
+
+\title{Übung 1.2}
+\author{Michael Morandell}
+\date{05.10.2023}
+\begin{document}
+\maketitle
+\section*{a)}
+% Kommentar
+\[
+x_{1,2} = \frac{p}{2} \pm \sqrt{\frac{p^2}{4} - q}
+\]\cite{grisham2013testament}
+
+\section*{b)}
+% Kommentar
+\[
+x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+\]
+
+\section*{c)}
+% Kommentar
+\[
+\sum_{k=0}^{\infty}\frac{k^x}{k!} = e^x
+\]
+
+\section*{d)}
+% Kommentar
+\[
+\sum_{i=0}^{\infty}(-1)^i \frac{x^{2i}}{(2i)!} = \sin(x)
+\]
+
+\section*{e)}
+% Kommentar
+\[
+f(x) = \sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x - a)^n
+\]
+
+\section*{f)}
+% Kommentar
+\[
+    R \mathbf{v} = 
+    \begin{pmatrix}
+        \cos\theta & -\sin \theta \\
+        \sin \theta & \cos \theta
+    \end{pmatrix} \cdot
+    \begin{pmatrix}
+        x\\y
+    \end{pmatrix} =
+    \begin{pmatrix}
+        x\cos\theta&-&y\sin\theta\\
+        x\sin\theta&+&y\cos\theta
+    \end{pmatrix}
+\]\cite{novik2006his}
+
+\section*{g)}
+\[
+    \begin{pmatrix}
+        1 &2 &\vrule & 3 \\
+        4 &5 &\vrule & 6
+    \end{pmatrix}
+\] 
+
+\section{Benutzen Sie Inline-Math}
+\subsection*{a)} Wähle \(n \in \mathbb{N}_0\) beliebig, aber fest. So gilt \(n! = n \cdot (n-1)! \).
+\subsection*{b)} Sei \(x\) ein lokales Minimum von \(f\).\\
+Dann gilt: \(\exists \epsilon >0 : \forall x' \in \mathbb{B}_{\epsilon} (x) : f(x') \ge f(x) \)
+
+\printbibliography
+\end{document}
